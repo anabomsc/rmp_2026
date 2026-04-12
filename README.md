@@ -1,7 +1,7 @@
 # Robótica Movel Probabilística - UFMA
 Introdução ao ROS 2 Humble, Gazebo Fortress e SLAM para a disciplina Robotótica Móvel Probabilística da Universidade Federal do Maranhão
 
-Autora: Ana Beatriz O. M. S. Costa | anaomscosta@gmail.com
+Autora: Ana Beatriz O. M. S. Costa
 
 Data: 12/04/2026
 
