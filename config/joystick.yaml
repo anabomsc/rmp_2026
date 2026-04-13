@@ -1,3 +1,5 @@
+# ros2 run turtlesim turtle_teleop_key --ros-args -r /turtle1/cmd_vel:=/artbot/cmd_vel
+
 joy_node:
   ros__parameters:
     device_id: 0
