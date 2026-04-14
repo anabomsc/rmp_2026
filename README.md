@@ -105,13 +105,13 @@ Fonte: [NAV2 - Getting Started - Installation](https://docs.nav2.org/getting_sta
 
 2. Clone o repositório
   ```shell
-  git clone TBD
+  git clone https://github.com/anabomsc/rmp_2026.git
   ```
 
 3. Construa o pacote
   ```shell
   cd ~/rmp_ws
-  colcon build rmp_2026
+  colcon build --packages-select rmp_2026
   ```
 4. Source o workspace
   - Abra um novo terminal
@@ -119,7 +119,7 @@ Fonte: [NAV2 - Getting Started - Installation](https://docs.nav2.org/getting_sta
   source install/setup.bash
   ```
   > [!WARNING]
-  > Antes de fazer o source do overlay criado (rmp_ws), é extremamente importante que um novo terminal seja aberto e que o comando de source seja executado nesse terminal separado. Realizar o source do overlay no mesmo terminal onde foi feita a construição pode causar problemas complexos. 
+  > Antes de fazer o source do overlay criado (rmp_ws), é extremamente importante que um novo terminal seja aberto e que o comando de source seja executado nesse terminal separado. Realizar o source do overlay no mesmo terminal onde foi feita a construção pode causar problemas complexos. 
 
 5. Launch!
   ```shell
