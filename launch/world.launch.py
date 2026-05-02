@@ -25,7 +25,7 @@ def generate_launch_description():
                     'worlds',
                     'ambiente_0.sdf'
                 ]),
-                TextSubstitution(text=' -r -s')
+                TextSubstitution(text=' -r -s') # -r rodar imediatamente -s sem gui
             ]
         }.items(),
     )
