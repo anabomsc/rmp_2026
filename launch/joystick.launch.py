@@ -39,7 +39,7 @@ def generate_launch_description():
         executable='teleop_node',
         name='teleop_node',
         parameters=[joy_params, {'use_sim_time': use_sim_time}],
-        remappings=[('/cmd_vel',f'{namespace}/cmd_vel')]
+        remappings=[('/cmd_vel',f'{namespace}/cmd_vel_joy')]
     )
     ld.add_action(teleop_node)
 
