@@ -5,6 +5,10 @@ twist_mux:
         topic   : cmd_vel
         timeout : 0.5
         priority: 10
+      turtle_teleop:
+        topic   : /artbot/cmd_vel_turtle
+        timeout : 0.5
+        priority: 20
       joystick:
         topic   : /artbot/cmd_vel_joy
         timeout : 0.5
