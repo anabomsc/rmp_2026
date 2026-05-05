@@ -27,7 +27,7 @@ def generate_launch_description():
     name = "artbot"
     namespace = "/artbot"
 
-    # Process the URDF file
+    # Process the urdf xacro file
     xacro_file = os.path.join(pkg_project,'description','robot','robot.urdf.xacro')
     robot_description_config = Command(['xacro ', xacro_file])
 
@@ -43,7 +43,7 @@ def generate_launch_description():
     )
     ld.add_action(state_publisher)
 
-    # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
+    # Spawn node from the ros_gz_sim package
     spawn_entity = Node(package='ros_gz_sim', executable='create',
                         arguments=['-topic', f'{namespace}/robot_description',
                                    '-entity', f"{name}",

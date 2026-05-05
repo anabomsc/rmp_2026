@@ -31,9 +31,8 @@
         </xacro:inertial_cylinder>
     </link>
 
-
-
     <gazebo reference="artbot_laser_frame">
+
         <material>Gazebo/Black</material>
 
         <sensor name="artbot_laser" type="gpu_lidar">
@@ -56,6 +55,7 @@
             <topic>/artbot/scan</topic>
             <gz_frame_id>artbot_laser_frame</gz_frame_id>
         </sensor>
+        
     </gazebo>
 
 </robot>

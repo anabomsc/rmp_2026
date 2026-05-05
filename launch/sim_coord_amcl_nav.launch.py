@@ -53,14 +53,14 @@ def generate_launch_description():
     )
     ld.add_action(start_navigation)
 
-    # # Twist Mux
+    # Twist Mux
     twist_mux_params_file = os.path.join(pkg_project, 'config', 'twist_mux.yaml')
     start_twist_mux = Node(
             package="twist_mux",
             executable="twist_mux",
             parameters=[
                 twist_mux_params_file,
-                {'use_sim_time': True}
+                {'use_sim_time': use_sim_time}
             ],
             remappings=[('/cmd_vel_out','/artbot/cmd_vel')]
     )

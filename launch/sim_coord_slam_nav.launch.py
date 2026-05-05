@@ -29,6 +29,7 @@ def generate_launch_description():
     start_sim = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_project, 'launch', 'sim_coord_robot.launch.py')),
+        launch_arguments={'use_sim_time': use_sim_time}.items(),
     )
     ld.add_action(start_sim)
 
@@ -70,7 +71,7 @@ def generate_launch_description():
             executable="twist_mux",
             parameters=[
                 twist_mux_params_file,
-                {'use_sim_time': True}
+                {'use_sim_time': use_sim_time}
             ],
             remappings=[('/cmd_vel_out','/artbot/cmd_vel')]
     )

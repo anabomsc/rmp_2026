@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <gazebo>
+        
         <plugin filename="ignition-gazebo-diff-drive-system"
         name="ignition::gazebo::systems::DiffDrive">
 
@@ -36,14 +37,13 @@
 
         </plugin>
 
-
         <plugin filename="ignition-gazebo-joint-state-publisher-system"
             name="ignition::gazebo::systems::JointStatePublisher">
             <topic>/artbot/joint_states</topic>
             <joint_name>artbot_left_wheel_joint</joint_name>
             <joint_name>artbot_right_wheel_joint</joint_name>
         </plugin>
-    </gazebo>
 
+    </gazebo>
 
 </robot>
