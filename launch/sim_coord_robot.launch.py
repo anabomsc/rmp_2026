@@ -39,5 +39,13 @@ def generate_launch_description():
     )
     ld.add_action(single_robot)
 
+    # Setup rviz2 
+    rviz = Node(
+       package='rviz2',
+       executable='rviz2',
+       arguments=['-d', os.path.join(pkg_project, 'config', 'robot_sim_coord_config.rviz')],
+    )
+    ld.add_action(rviz)
+
     # Launch!
     return ld
