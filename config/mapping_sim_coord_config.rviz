@@ -191,59 +191,21 @@ Visualization Manager:
       Show Names: true
       Tree:
         artbot_map:
-          artbot_odom:
-            artbot_base_link:
-              artbot_base_footprint:
+          {}
+        artbot_odom:
+          artbot_base_link:
+            artbot_base_footprint:
+              {}
+            artbot_chassis:
+              artbot_caster_wheel:
                 {}
-              artbot_chassis:
-                artbot_caster_wheel:
-                  {}
-                artbot_laser_frame:
-                  {}
-              artbot_left_wheel:
+              artbot_laser_frame:
                 {}
-              artbot_right_wheel:
-                {}
+            artbot_left_wheel:
+              {}
+            artbot_right_wheel:
+              {}
       Update Interval: 0
-      Value: true
-    - Angle Tolerance: 0.10000000149011612
-      Class: rviz_default_plugins/Odometry
-      Covariance:
-        Orientation:
-          Alpha: 0.5
-          Color: 255; 255; 127
-          Color Style: Unique
-          Frame: Local
-          Offset: 1
-          Scale: 1
-          Value: true
-        Position:
-          Alpha: 0.30000001192092896
-          Color: 204; 51; 204
-          Scale: 1
-          Value: true
-        Value: true
-      Enabled: true
-      Keep: 100
-      Name: Odometry
-      Position Tolerance: 0.10000000149011612
-      Shape:
-        Alpha: 1
-        Axes Length: 1
-        Axes Radius: 0.10000000149011612
-        Color: 255; 25; 0
-        Head Length: 0.30000001192092896
-        Head Radius: 0.10000000149011612
-        Shaft Length: 1
-        Shaft Radius: 0.05000000074505806
-        Value: Arrow
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        Filter size: 10
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /artbot/odom
       Value: true
   Enabled: true
   Global Options:
@@ -290,26 +252,21 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: rviz_default_plugins/ThirdPersonFollower
-      Distance: 8.218993186950684
+      Angle: 0
+      Class: rviz_default_plugins/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
-      Focal Point:
-        X: 0.62784743309021
-        Y: -0.5835185050964355
-        Z: -2.682209014892578e-07
-      Focal Shape Fixed Size: true
-      Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6197971701622009
+      Scale: 31.058486938476562
       Target Frame: <Fixed Frame>
-      Value: ThirdPersonFollower (rviz_default_plugins)
-      Yaw: 5.157395839691162
+      Value: TopDownOrtho (rviz_default_plugins)
+      X: 0.40246617794036865
+      Y: 1.1873341798782349
     Saved: ~
 Window Geometry:
   Displays:

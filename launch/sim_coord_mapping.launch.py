@@ -51,7 +51,7 @@ def generate_launch_description():
     rviz = Node(
        package='rviz2',
        executable='rviz2',
-       arguments=['-d', os.path.join(pkg_project, 'config', 'sim_coord_mapping_config.rviz')],
+       arguments=['-d', os.path.join(pkg_project, 'config', 'mapping_sim_coord_config.rviz')],
     )
     ld.add_action(rviz)
 
