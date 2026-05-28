@@ -35,7 +35,7 @@ def generate_launch_description():
 
     # SLAM Toolbox Localization
     slam_params_file = os.path.join(pkg_project,'config','mapper_params_online_async.yaml')
-    serial_map_file = '/home/anaomscosta/maps_and_bags/ambiente_0_serial'
+    serial_map_file = os.path.join(pkg_project,'config','maps_ambiente_0','ambiente_0_serial')
     start_async_slam_toolbox_node = Node(
         package='slam_toolbox',
         executable='async_slam_toolbox_node',
@@ -46,7 +46,7 @@ def generate_launch_description():
           {'map_frame': 'map'},
           {'mode': 'localization'},
           {'map_file_name': serial_map_file},
-          {'map_start_at_dock': True},
+          {'map_start_pose': [0.0, 0.0, 0.0]},
           {'use_sim_time': use_sim_time}
         ],
     )
