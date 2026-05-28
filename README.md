@@ -9,7 +9,7 @@ Data: 12/04/2026
 * `config` - contém arquivos de configuração utilizados por pacotes e ferramentas
 * `description` - contém arquivos de descrição utilizados para simulação de sistemas e outros
 * `env-hooks` - contém arquivos de gancho necessários para definir variáveis do Gazebo
-* `launch` - contém arquivos de launch (${LAUNCH_FILE}) do ROS
+* `launch` - contém arquivos de launch do ROS
 * `worlds` - contém arquivos de simulação de sistema do Gazebo
 
 ## Instalar Requisitos
@@ -95,6 +95,14 @@ Fonte: [NAV2 - Getting Started - Installation](https://docs.nav2.org/getting_sta
   sudo apt install ros-humble-nav2-bringup
   ```
 
+### Instalação do pacote TwistMux
+Fonte: [TwistMux API Docs](https://docs.ros.org/en/humble/p/twist_mux/)
+
+  - Instalar a versão do pacote para ROS 2 Humble
+  ```shell
+  sudo apt install ros-humble-twist-mux
+  ```
+
 ## Uso do Pacote
 
 1. Crie um workspace
@@ -125,6 +133,7 @@ Fonte: [NAV2 - Getting Started - Installation](https://docs.nav2.org/getting_sta
   ```
 
 5. Launch!
+  - Substitua `${LAUNCH_FILE}` pelo nome de um dos arquivos no diretório `launch`
   ```shell
   ros2 launch rmp_2026 ${LAUNCH_FILE}.launch.py
   ```
