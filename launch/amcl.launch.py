@@ -32,13 +32,13 @@ def generate_launch_description():
 
     # Setup project paths
     pkg_project = get_package_share_directory('rmp_2026')
-    map_file = '/home/anaomscosta/maps_and_bags/ambiente_0_save.yaml'
 
     # Setup for namespaces and frames
     namespace = "/artbot"
 
     # Nav2 AMCL Localization
     nav2_params_file = os.path.join(pkg_project,'config','nav2_params.yaml')
+    map_file = os.path.join(pkg_project,'config','maps_ambiente_0','ambiente_0_save.yaml')
     start_map_server = Node(
         package='nav2_map_server',
         executable='map_server',
